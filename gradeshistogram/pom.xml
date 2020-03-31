@@ -8,8 +8,8 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>gradeshistogram</artifactId>
-	<name>SEIP Assignment 2</name>
-	<description>Frequency of grades</description>
+	<name>Histogram of grades and frequencies</name>
+	<description>Executes the calculation of the grades' frequencies and makes all the results into a histogram</description>
 
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
