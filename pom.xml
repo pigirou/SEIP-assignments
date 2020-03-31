@@ -4,6 +4,8 @@
   <artifactId>seip2020_practical_assignments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
+  <name> SEIP 2020 Practical Assignments</name>
+  <description> A file consisting of all the assignments for "Software Engineering in practice"</description>
   <modules>
   	<module>gradeshistogram</module>
   </modules>
