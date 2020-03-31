@@ -12,8 +12,15 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 
-public class HistogramGenerator {
+/***
+ * 
+ * @author pigirou The purpose of this class is to calculate all the frequencies
+ *         from the grades that are given as input in a file from the cmd
+ * @since March 2020
+ */
 
+public class HistogramGenerator {
+	// Method that plots the results in a chart
 	public void generateChart(int[] dataValues) {
 
 		XYSeriesCollection dataset = new XYSeriesCollection();
@@ -47,7 +54,13 @@ public class HistogramGenerator {
 	public static void main(String[] args) {
 		ArrayList<Integer> list = new ArrayList<Integer>();
 		int result;
+		/*
+		 * Getting a file as input from the cmd in order to use it and calculate the
+		 * frequencies of each grade
+		 */
 		File inFile = null;
+		// Checking that only one argument is given from the command line
+
 		if (0 < args.length) {
 			inFile = new File(args[0]);
 		} else {
@@ -83,6 +96,8 @@ public class HistogramGenerator {
 		}
 
 		HistogramGenerator demo = new HistogramGenerator();
+		// calling the function that will generate the chart for the frequency of each
+		// grade
 		demo.generateChart(f);
 
 	}
