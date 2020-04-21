@@ -19,13 +19,14 @@ public class ArithmeticOperationsTest {
 	
 	@Test
 	public void test_multiply_negative() {
-		 mm.multiply(3, 23);
 		 thrown.expectMessage("x & y should be >= 0");
+		 mm.multiply(-3, -23);
+		
 	}
 	
 	@Test
 	public void test_multiply_integer() {
-		mm.multiply(2, 102999998);
 		thrown.expectMessage("The product does not fit in an Integer variable");
-	}
+		mm.multiply(1000000, 12392837);
+			}
 }
