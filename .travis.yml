@@ -1,4 +1,5 @@
 language: java
+install: true
 
 jdk:
   - openjdk8
@@ -14,6 +15,7 @@ before_script:
 
 script: 
   - mvn clean package jacoco:report coveralls:report cobertura:cobertura  
+  - mvn install
     # the coveralls:report is required only for the coveralls coverage service
     # the cobertura:cobertura is optional only for advanced coverage reporting and, if exists, is used by CodeCov 
 
