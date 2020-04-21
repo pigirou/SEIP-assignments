@@ -9,8 +9,7 @@ branches:
   - master
   - development
 
-before_script: 
-  - cd project  # enter Maven root directory
+before_script:  
   - ls -la # this command just prints the contents of the current working directory.
 
 script: 
