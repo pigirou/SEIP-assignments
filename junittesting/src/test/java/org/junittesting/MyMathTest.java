@@ -1,20 +1,27 @@
 package org.junittesting;
 
+import org.junit.Rule;
 import org.junit.Test;
+import org.junit.rules.ExpectedException;
 
 import math.MyMath;
 
 public class MyMathTest {
 	MyMath a = new MyMath();
 
-	@Test(expected = IllegalArgumentException.class)
+	@Rule
+	public ExpectedException thrown = ExpectedException.none();
+	
+	@Test
 	public void test_factorial_zero() {
-		a.factorial(0);
+		 thrown.expectMessage("The number should be above 0");
+		a.factorial(-1);
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test
 	public void test_factorial_twelve() {
-		a.factorial(12);
+		thrown.expectMessage("The number should be below 12");
+		a.factorial(13);
 	}
 
 }
