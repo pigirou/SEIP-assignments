@@ -4,13 +4,17 @@ package math;
  * A class that calculates mathematical operations in order to demonstrate Unit
  * Testing.
  * 
- * @author pigirou (pigi.rou@gmail.com)
+ * @author pigirou 
+ * @version 1.0
+ * @since 2020-04-22
  */
 
 public class MyMath {
 	/**
-	 * Receives an integer number as input and calculates the factorial. Throws
-	 * IllegalArgumentException when the number does not lie between 0 and 12
+	 * Receives an integer number as input and calculates the factorial. 
+	 * @param n the number given as input to calculate the factorial
+	 * @return the factorial of the parameter/number n 
+	 * @exception IllegalArgumentException when n is below 0 or above 12 
 	 */
 
 	public static int factorial(int n) {
@@ -27,8 +31,14 @@ public class MyMath {
 		return f;
 	}
 
+	/**
+	 * Method that finds if a number is prime.
+	 * @param n the number given as input to calculate if it is prime
+	 * @return a boolean variable that is true when the number is prime and false if it's not 
+	 * @exception IllegalArgumentException when n is below 2
+	 */
 	public boolean isPrime(int n) {
-		boolean flag = false;
+		boolean flag = true;
 		if (n < 2) {
 			throw new IllegalArgumentException("The number given should be above or equal to 2");
 		}
@@ -38,7 +48,7 @@ public class MyMath {
 
 		for (int i = 2; i <= n / 2; ++i) {
 			if (n % i == 0) {
-				flag = true;
+				flag = false ;
 				break;
 			}
 		}
