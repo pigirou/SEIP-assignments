@@ -17,15 +17,21 @@ java -jar histogramgenerator/target/histogramgenerator-0.0.1-SNAPSHOT-jar-with-d
 ## Unit Testing and CI Demonstration
 
 The purpose of this part, which is included in the junittesting folder, is to incorporate Unit Testing and Continuous Integration with Travis in a simple manner through the course of Software Engineering in practice. The tools that are used are Travis, Jacoco and Junit. 
-
-## MyMath
-This specific class calculates the factorial using a method that receives the number for the calculation of the factorial as an input.
-For that, there is also a class for testing and one for checking parameters. 
-
-## ArithmeticOperations 
-In this class there is a method to divide and one to multiply to numbers given as input. There is also a test class in order to test for the exceptions that may appear through the compilation of the project using JUnit. 
-
+   
 ## How to build
+1. Use mv clean install jacoco:report in order to generate the coverage report.
+2. Check that you have jacoco in your target/site path.
 
+## How to utilize Continuous Integration
+This specific project uses Travis CI which gets activated every time you push something to your GitHub repository. With Travis you can test and build this project. Everything regarding Travis is included in the .travis.yml file. 
+Don't forget to substitute your token at the .travis.yml file.
+Your token from CodeCov will be placed in the following spot:
+after_success:
+- bash <(curl -s https://codecov.io/bash) -t your_token
+
+
+
+ 
+ 
 
 
