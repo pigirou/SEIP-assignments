@@ -1,5 +1,5 @@
 # SEIP 2020 LAB ASSIGNMENTS
-://travis-ci.com/pigirou/SEIP-assignments.svg?token=D4abBGiU23y1aU1FXZYy&branch=development
+[![Build Status](https://travis-ci.com/pigirou/SEIP-assignments.svg?token=D4abBGiU23y1aU1FXZYy&branch=master)](https://travis-ci.com/pigirou/SEIP-assignments)
 
 This repository consists of all the assignments for the lesson Software Engineering in Practice.All assignments will be written in Java using the IDE of Eclipse.
 
