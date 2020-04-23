@@ -1,4 +1,6 @@
 # SEIP 2020 LAB ASSIGNMENTS
+://travis-ci.com/pigirou/SEIP-assignments.svg?token=D4abBGiU23y1aU1FXZYy&branch=development
+
 This repository consists of all the assignments for the lesson Software Engineering in Practice.All assignments will be written in Java using the IDE of Eclipse.
 
 ## Histogram Generator
