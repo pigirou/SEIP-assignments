@@ -1,5 +1,5 @@
 language: java
-
+
 jdk:
   - openjdk8
 
@@ -13,7 +13,7 @@ before_script:
   - ls -la # this command just prints the contents of the current working directory.
 
 script: 
-  - mvn clean package jacoco:report 
+  - mvn package jacoco:report 
     
 after_success:
 - bash <(curl -s https://codecov.io/bash) -t d88add96-4a3e-4fa7-848e-893ff70d96a0
