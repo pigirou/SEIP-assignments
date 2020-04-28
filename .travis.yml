@@ -8,8 +8,7 @@ branches:
   - master
   - development
 
-before_script:
-  - cd SEIP-assignments  
+before_script:  
   - ls -la # this command just prints the contents of the current working directory.
 
 script: 
