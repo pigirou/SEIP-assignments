@@ -11,7 +11,7 @@
 	<description> A file consisting of all the assignments for "Software Engineering in practice"</description>
 	<modules>
 		<module>gradeshistogram</module>
-		<module>junittesting</module>
+		<module>unittesting</module>
 	</modules>
 
 	<dependencies>
