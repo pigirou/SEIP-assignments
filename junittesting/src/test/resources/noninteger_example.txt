@@ -1,1 +1,0 @@
-This is a txt. file that includes not only integers (e.g. 1,2,3) but also other types of characters.
