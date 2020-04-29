@@ -17,7 +17,7 @@ public class MyMath {
 	 * @exception IllegalArgumentException when n is below 0 or above 12 
 	 */
 
-	public static int factorial(int n) {
+	public int factorial(int n) {
 		if (n < 0) {
 			throw new IllegalArgumentException("The number should be above 0");
 		}
