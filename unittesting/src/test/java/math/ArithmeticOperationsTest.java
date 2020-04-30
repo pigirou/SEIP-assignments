@@ -44,6 +44,13 @@ public class ArithmeticOperationsTest {
 			}
 
 
+	@Test
+	public void test_multiply_zero_y() {
+		 thrown.expectMessage("y should not be 0");
+		 mm.multiply(2, 0);
+		
+	}
+
 }
 
 
