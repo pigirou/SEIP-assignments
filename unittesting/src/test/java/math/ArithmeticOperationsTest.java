@@ -17,7 +17,7 @@ public class ArithmeticOperationsTest {
 	}
 	
 	@Test
-	public void test_divide_zero_nominator() {
+	public void test_divide_zero_numerator() {
 		Assert.assertEquals(0, mm.divide(0,5), 0.000001);
 	}
 	
