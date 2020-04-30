@@ -17,12 +17,12 @@ public class ArithmeticOperationsTest {
 	
 	@Test
 	public void test_divide_zero_nominator() {
-		Assert.AssertEquals(0, mm.divide(0,5));
+		Assert.assertEquals(0, mm.divide(0,5));
 	}
 	
 	@Test 
 	public void test_divide_normal_case() {
-		Assert.AssertEqual(10, mm.divide(100,10));
+		Assert.assertEquals(10, mm.divide(100,10));
 	}
 	
 
