@@ -11,9 +11,20 @@ public class ArithmeticOperationsTest {
 	ArithmeticOperations mm = new ArithmeticOperations();
 
 	@Test(expected = ArithmeticException.class)
-	public void test_divide() {
+	public void test_divide_zero_denominator() {
 		mm.divide(10,0);
 	}
+	
+	@Test
+	public void test_divide_zero_nominator() {
+		Assert.AssertEquals(0, mm.divide(0,5));
+	}
+	
+	@Test 
+	public void test_divide_normal_case() {
+		Assert.AssertEqual(10, mm.divide(100,10));
+	}
+	
 
 	@Rule
 	public ExpectedException thrown = ExpectedException.none();
