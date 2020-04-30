@@ -50,6 +50,11 @@ public class ArithmeticOperationsTest {
 		 mm.multiply(2, 0);
 		
 	}
+	
+	@Test
+	public void test_multiply_valid() {
+		 Assert.assertEquals(15, mm.multiply(5, 3));
+	}
 
 }
 
