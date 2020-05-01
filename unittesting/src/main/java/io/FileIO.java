@@ -39,7 +39,7 @@ public class FileIO {
 			String line = null;
 			String valid = "[0-9]+|-\\d+";
 			while ((line = reader.readLine()) != null) {
-				if (line.matches(valid)) {
+				if ((line.matches(valid)) && (Integer.parseInt(line) < Integer.MAX_VALUE)) {
 					int number = Integer.parseInt(line);
 					numbersList.add(number);
 				}
