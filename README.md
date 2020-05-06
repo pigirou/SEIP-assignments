@@ -10,14 +10,14 @@ This directory consists of the following modules:
 A project that generates a histogram of grades and frequencies to demonstrate the use of "Maven", a Build Automation Tool.
 
 For more info:
-- [link] (gradeshistogram/README.md)
+- [link](gradeshistogram/README.md)
 
 ## Unit Testing and CI Demonstration
 
 A project consisting of simple operations that are built and test using JUnit and Travis CI.
 
 For more info:
-- [link] (unittesting/README.md)
+- [link](unittesting/README.md)
 
 
  
